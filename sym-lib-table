@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Compressor-Speed-Controller-rescue)(type Legacy)(uri /home/pvint/Electronics/Frigoboat-Danfoss-SpeedController/Compressor-Speed-Controller-rescue.lib)(options "")(descr ""))
+)

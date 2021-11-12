@@ -1,0 +1,349 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+3V3 #PWR012
+U 1 1 5F3A8687
+P 9200 2800
+F 0 "#PWR012" H 9200 2650 50  0001 C CNN
+F 1 "+3V3" H 9215 2973 50  0000 C CNN
+F 2 "" H 9200 2800 50  0001 C CNN
+F 3 "" H 9200 2800 50  0001 C CNN
+	1    9200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 2800 9200 3050
+Text GLabel 7700 2250 0    50   BiDi ~ 0
+SDA
+Text GLabel 8050 2250 0    50   Output ~ 0
+SCL
+$Comp
+L power:GND #PWR013
+U 1 1 5F3AE01F
+P 9450 3700
+F 0 "#PWR013" H 9450 3450 50  0001 C CNN
+F 1 "GND" H 9455 3527 50  0000 C CNN
+F 2 "" H 9450 3700 50  0001 C CNN
+F 3 "" H 9450 3700 50  0001 C CNN
+	1    9450 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 3450 9550 3450
+Wire Wire Line
+	9450 3700 9450 3450
+Wire Wire Line
+	9200 3050 9550 3050
+$Comp
+L Device:R R2
+U 1 1 5F3CD86D
+P 7700 2100
+F 0 "R2" H 7770 2146 50  0000 L CNN
+F 1 "10k" H 7770 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7630 2100 50  0001 C CNN
+F 3 "~" H 7700 2100 50  0001 C CNN
+	1    7700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F3CEBB8
+P 8050 2100
+F 0 "R3" H 8120 2146 50  0000 L CNN
+F 1 "10k" H 8120 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7980 2100 50  0001 C CNN
+F 3 "~" H 8050 2100 50  0001 C CNN
+	1    8050 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR010
+U 1 1 5F3CFFCC
+P 7700 1950
+F 0 "#PWR010" H 7700 1800 50  0001 C CNN
+F 1 "+3V3" H 7715 2123 50  0000 C CNN
+F 2 "" H 7700 1950 50  0001 C CNN
+F 3 "" H 7700 1950 50  0001 C CNN
+	1    7700 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR011
+U 1 1 5F3D130C
+P 8050 1950
+F 0 "#PWR011" H 8050 1800 50  0001 C CNN
+F 1 "+3V3" H 8065 2123 50  0000 C CNN
+F 2 "" H 8050 1950 50  0001 C CNN
+F 3 "" H 8050 1950 50  0001 C CNN
+	1    8050 1950
+	1    0    0    -1  
+$EndComp
+Text GLabel 9550 3150 0    50   BiDi ~ 0
+SDA
+Text GLabel 9550 3250 0    50   Output ~ 0
+SCL
+$Comp
+L power:GND #PWR03
+U 1 1 5F3C9A49
+P 3500 2900
+F 0 "#PWR03" H 3500 2650 50  0001 C CNN
+F 1 "GND" H 3505 2727 50  0000 C CNN
+F 2 "" H 3500 2900 50  0001 C CNN
+F 3 "" H 3500 2900 50  0001 C CNN
+	1    3500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR02
+U 1 1 5F3C86F1
+P 3500 2600
+F 0 "#PWR02" H 3500 2450 50  0001 C CNN
+F 1 "+3V3" H 3515 2773 50  0000 C CNN
+F 2 "" H 3500 2600 50  0001 C CNN
+F 3 "" H 3500 2600 50  0001 C CNN
+	1    3500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5F3C7398
+P 3500 2750
+F 0 "C1" H 3615 2796 50  0000 L CNN
+F 1 "0.1uF" H 3615 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3538 2600 50  0001 C CNN
+F 3 "~" H 3500 2750 50  0001 C CNN
+	1    3500 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 3450
+Wire Wire Line
+	3200 3150 3200 3450
+Connection ~ 3200 3750
+Wire Wire Line
+	3200 3750 3200 3950
+Wire Wire Line
+	3200 3700 3200 3750
+Wire Wire Line
+	3350 3700 3200 3700
+Wire Wire Line
+	3200 3500 3200 3450
+Wire Wire Line
+	3350 3500 3200 3500
+Wire Wire Line
+	3200 3950 3100 3950
+Text GLabel 3100 3950 0    50   UnSpc ~ 0
+Load-
+Text GLabel 2500 3150 0    50   UnSpc ~ 0
+Load+
+Text Notes 4300 3000 0    50   ~ 0
+I2C address: 0x40\n
+Wire Wire Line
+	3600 3150 3200 3150
+Wire Wire Line
+	4000 2600 4000 2950
+$Comp
+L power:+3V3 #PWR04
+U 1 1 5F3BF9CC
+P 4000 2600
+F 0 "#PWR04" H 4000 2450 50  0001 C CNN
+F 1 "+3V3" H 4015 2773 50  0000 C CNN
+F 2 "" H 4000 2600 50  0001 C CNN
+F 3 "" H 4000 2600 50  0001 C CNN
+	1    4000 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 3750 2    50   Output ~ 0
+!ALERT
+Text GLabel 4400 3550 2    50   Input ~ 0
+SCL
+Text GLabel 4400 3450 2    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	4000 4150 4000 3950
+$Comp
+L power:GND #PWR05
+U 1 1 5F3BF8D6
+P 4000 4150
+F 0 "#PWR05" H 4000 3900 50  0001 C CNN
+F 1 "GND" H 4005 3977 50  0000 C CNN
+F 2 "" H 4000 4150 50  0001 C CNN
+F 3 "" H 4000 4150 50  0001 C CNN
+	1    4000 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3650 3350 3700
+Wire Wire Line
+	3600 3650 3350 3650
+Wire Wire Line
+	3350 3550 3350 3500
+Wire Wire Line
+	3600 3550 3350 3550
+Connection ~ 3200 3150
+Wire Wire Line
+	2500 3150 3200 3150
+$Comp
+L power:+12V #PWR01
+U 1 1 5F3BF742
+P 3200 3150
+F 0 "#PWR01" H 3200 3000 50  0001 C CNN
+F 1 "+12V" H 3215 3323 50  0000 C CNN
+F 2 "" H 3200 3150 50  0001 C CNN
+F 3 "" H 3200 3150 50  0001 C CNN
+	1    3200 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F3BF314
+P 3200 3600
+F 0 "R1" H 3112 3646 50  0000 R CNN
+F 1 "5mΩ" H 3112 3555 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3130 3600 50  0001 C CNN
+F 3 "~" H 3200 3600 50  0001 C CNN
+	1    3200 3600
+	1    0    0    -1  
+$EndComp
+Text Notes 4300 2850 0    50   ~ 0
+INA220\n
+$Comp
+L Compressor-Speed-Controller-rescue:INA226-Analog_ADC U1
+U 1 1 5F3BF087
+P 4000 3450
+F 0 "U1" H 4000 4128 50  0000 C CNN
+F 1 "INA220" H 4000 4037 50  0000 C CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 4050 3550 50  0001 C CNN
+F 3 "${KIPRJMOD}/datasheets/ina220.pdf" H 4350 3350 50  0001 C CNN
+	1    4000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Female J1
+U 1 1 5FC54761
+P 9750 3250
+F 0 "J1" H 9778 3276 50  0000 L CNN
+F 1 "Conn_01x05_Female" H 9778 3185 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 9750 3250 50  0001 C CNN
+F 3 "~" H 9750 3250 50  0001 C CNN
+	1    9750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5FEBC7A0
+P 6050 4150
+F 0 "#PWR09" H 6050 3900 50  0001 C CNN
+F 1 "GND" H 6055 3977 50  0000 C CNN
+F 2 "" H 6050 4150 50  0001 C CNN
+F 3 "" H 6050 4150 50  0001 C CNN
+	1    6050 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR06
+U 1 1 5FEBC7A6
+P 6050 2300
+F 0 "#PWR06" H 6050 2150 50  0001 C CNN
+F 1 "+3V3" H 6065 2473 50  0000 C CNN
+F 2 "" H 6050 2300 50  0001 C CNN
+F 3 "" H 6050 2300 50  0001 C CNN
+	1    6050 2300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2300 6050 2650
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP1
+U 1 1 5FEBC7AD
+P 6050 2850
+F 0 "JP1" V 6096 2918 50  0000 L CNN
+F 1 "SolderJumper_3_Bridged12" V 6005 2918 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm_NumberLabels" H 6050 2850 50  0001 C CNN
+F 3 "~" H 6050 2850 50  0001 C CNN
+	1    6050 2850
+	0    1    -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP2
+U 1 1 5FEBC7B3
+P 6050 3800
+F 0 "JP2" V 6096 3868 50  0000 L CNN
+F 1 "SolderJumper_3_Bridged12" V 6005 3868 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm_NumberLabels" H 6050 3800 50  0001 C CNN
+F 3 "~" H 6050 3800 50  0001 C CNN
+	1    6050 3800
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR08
+U 1 1 5FEBC7BB
+P 6050 3500
+F 0 "#PWR08" H 6050 3350 50  0001 C CNN
+F 1 "+3V3" H 6065 3673 50  0000 C CNN
+F 2 "" H 6050 3500 50  0001 C CNN
+F 3 "" H 6050 3500 50  0001 C CNN
+	1    6050 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4150 6050 4000
+Wire Wire Line
+	6050 3600 6050 3500
+$Comp
+L power:GND #PWR07
+U 1 1 5FEBC7C3
+P 6050 3050
+F 0 "#PWR07" H 6050 2800 50  0001 C CNN
+F 1 "GND" H 6055 2877 50  0000 C CNN
+F 2 "" H 6050 3050 50  0001 C CNN
+F 3 "" H 6050 3050 50  0001 C CNN
+	1    6050 3050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3150 5450 3150
+Wire Wire Line
+	5450 3150 5450 2850
+Wire Wire Line
+	5450 2850 5900 2850
+Wire Wire Line
+	5450 3800 5450 3250
+Wire Wire Line
+	5450 3250 4400 3250
+Wire Wire Line
+	5450 3800 5900 3800
+Text GLabel 9550 3350 0    50   Input ~ 0
+!ALERT
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 60045EEA
+P 1550 2600
+F 0 "J2" H 1468 2817 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1468 2726 50  0000 C CNN
+F 2 "digikey-footprints:Term_Block_1x2_P5mm" H 1550 2600 50  0001 C CNN
+F 3 "~" H 1550 2600 50  0001 C CNN
+	1    1550 2600
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1750 2600 2    50   UnSpc ~ 0
+Load+
+Text GLabel 1750 2700 2    50   UnSpc ~ 0
+Load-
+Text GLabel 5450 3800 0    50   UnSpc ~ 0
+A0
+Text GLabel 5450 2850 0    50   UnSpc ~ 0
+A1
+$EndSCHEMATC
